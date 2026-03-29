@@ -1,5 +1,11 @@
 import * as XLSX from 'xlsx';
 
+export interface ExcelRow {
+  destination: string;
+  group: string;
+  [key: string]: any;
+}
+
 /**
  * Reads the Excel file and extracts data as JSON.
  */
